@@ -1,0 +1,9 @@
+	
+	For running the program: click on CocktailMaker > bin > Release > CocktailMaker.exe
+
+	For running this program you need to install Matlab 2015B first
+	Please run this program from path without spaces (" ").
+	For exaple, instead of locating the program in "C:\Users\aviram\Desktop\check project", locate it in "C:\Users\aviram\Desktop\checkProject".
+
+	for more information and details:
+	aviramad@post.bgu.ac.il

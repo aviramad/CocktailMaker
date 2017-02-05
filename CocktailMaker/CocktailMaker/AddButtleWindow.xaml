@@ -1,0 +1,32 @@
+﻿<Window x:Class="WpfApplication2.AddButtleWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Add New Bottle" Height="700" Width="500" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" WindowStyle="None"  BorderThickness="1">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="8*" />
+            <ColumnDefinition Width="1*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2*" />
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="8*" />
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="1*" />
+        </Grid.RowDefinitions>
+        <Button Grid.Column="0" Grid.Row="0" Margin="10, 10, 0, 50" Click="Back_Click">Back</Button>
+        <Label Grid.Column="1" Grid.Row="0" Margin="20,30,20,20" FontSize="25" FontWeight="Bold" HorizontalContentAlignment="Center">Add Bottle to Database</Label>
+        <Label Grid.Column="1" Grid.Row="1" Margin="20,10,210,10">PLEASE SELECT YOUR PIC</Label>
+        <Button Grid.Column="1" Grid.Row="1" Margin="210,10,20,10" Click="Load_Click">Load</Button>
+        <Image Grid.Column="1" Grid.Row="2" Margin="20,10,20,0" Name="imgPhoto"/>
+        <Label Grid.Column="1" Grid.Row="3" Margin="20,10,210,10">Drink's Name: </Label>
+        <TextBox Name="drinkName" Grid.Column="1" Grid.Row="3" Margin="210,10,20,10"></TextBox>
+        <Label Grid.Column="1" Grid.Row="4" Margin="20,10,210,10">Drink's Type:</Label>
+        <ComboBox Name="drinkType" Grid.Column="1" Grid.Row="4" Margin="210,10,20,10"> </ComboBox>
+        <Button Grid.Column="1" Grid.Row="6" Margin="20, 0, 20, 20" Click="Add_Click">ADD TO DATABASE!</Button>
+        <Label Name="error_pic"  Grid.Column="1" Grid.Row="5" Margin="20,10, 20,10">please load a pic and fill all fields</Label>
+    </Grid>
+</Window>
